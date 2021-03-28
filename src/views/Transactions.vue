@@ -160,7 +160,7 @@
             loadWeb3Provider: function () {
 
                 const infuraUrl = "http://mainnet.infura.io/v3/53dbf207e63c42e99cacb63c2d41ec4f";
-                const ganacheUrl = "http://localhost:8545";
+                const ganacheUrl = "http://localhost:7545";
 
                 const chosenNetwork = localStorage.getItem('selectedNetwork');
 
@@ -241,7 +241,7 @@
                     "from":_from,
                     "to": _to,
                     "value": web3.utils.toWei(_amount,'ether'),
-                    "gas": 1000,         //(optional)
+                    "gas": 21000,         //(optional)
                     // "gasPrice": 4500000,  (optional)
                     // "data": 'For testing' (optional)
                     // "nonce": 10           (optional)
